@@ -1,0 +1,13 @@
+.search-bar {
+    display: flex;
+    box-shadow: 2px 2px 5px var(--clr-input-dark-gray);
+    width: 30vw;
+    padding: 10px;
+}
+
+
+.input-field {
+    border: 0;
+    outline: 0;
+    width: 30vw;
+}

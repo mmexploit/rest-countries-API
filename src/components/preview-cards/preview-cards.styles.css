@@ -1,0 +1,35 @@
+.preview-card {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.flag {
+    height: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-position: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px;
+}
+
+@media (min-width: 375px) {
+    .preview-card {
+        width: 20vw;
+        margin: 0;
+    }
+
+    .flag {
+        height: 170px;
+    }
+}

@@ -1,0 +1,7 @@
+.cards-container {
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--clr-background-very-light-gray);
+}
