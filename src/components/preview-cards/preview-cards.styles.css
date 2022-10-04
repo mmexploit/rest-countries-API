@@ -5,7 +5,9 @@
     margin: 0 auto;
     align-items: flex-start;
     border-radius: 4px;
+    box-shadow: 2px 2px 5px var(--clr-input-dark-gray);
     overflow: hidden;
+    margin-top: 2em;
 }
 
 .flag {
@@ -27,6 +29,7 @@
     .preview-card {
         width: 20vw;
         margin: 0;
+        margin-top: 2em;
     }
 
     .flag {

@@ -1,0 +1,9 @@
+.filter-dropdown {
+    padding: 18px;
+    border: 0;
+    box-shadow: 2px 2px 5px var(--clr-input-dark-gray);
+}
+
+option {
+    padding: 3em;
+}

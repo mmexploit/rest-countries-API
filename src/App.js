@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import CardsContainer from './components/cards-container/cards-container.component';
+import FilterDropdown from './components/filter-dropdown/filter-dropdown.component';
 import SearchBar from './components/search-bar/search-bar.component';
 
 function App() {
   const [ data, setData] = useState();
   const [ searchQuery, setSearchQuery ] = useState("");
+  const [ filterQuery, setFilterQuery ] = useState("");
 
   useEffect(() => {
     const fetchData = () => {
@@ -21,12 +23,17 @@ function App() {
     return null;
   }
 
-  const filtered = [...data].filter(country => country.name.official.toLowerCase().includes(searchQuery.toLowerCase()))
+  console.log(filterQuery)
+  const filteredInitial = [...data].filter(country => country.region.includes(filterQuery))
+  const filteredFinal = [...filteredInitial].filter(country => country.name.official.toLowerCase().includes(searchQuery.toLowerCase()))
 
   return (
     <div className="App">
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
-      <CardsContainer data={filtered}/>
+      <div className='search-and-filter'>
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+        <FilterDropdown filterQuery={filterQuery} setFilterQuery={setFilterQuery}/>
+      </div>
+      <CardsContainer data={filteredFinal}/>
     </div>
   );
 }
