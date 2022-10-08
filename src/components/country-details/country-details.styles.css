@@ -1,0 +1,14 @@
+.country-details {
+    display: flex;
+    padding: 2em;
+    margin: 2em auto;
+    gap: 4em;
+}
+
+
+.detailed-flag {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+}

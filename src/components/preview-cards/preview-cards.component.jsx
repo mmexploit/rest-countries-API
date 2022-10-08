@@ -14,7 +14,7 @@ const PreviewCard = ({ country }) => {
                 <span className="population">Population: { population }</span>
                 <span className="region">Region: { region }</span>
                 <span className="capital">Capital: { capital[0] }</span>
-                <Link to="">See more</Link>
+                <Link to={`/${common}`}>See more</Link>
             </div>
         </div>
         
