@@ -25,9 +25,6 @@ const DetailedView = () => {
         return null;
     }
 
-    console.log(country[0].name.official)
-    const { name : { official } = {}} = country[0];
-
     return(
         <CountryDetails country={country[0]}/>
     )
