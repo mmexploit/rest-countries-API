@@ -5,8 +5,8 @@ import CountryDetails from "../country-details/country-details.component";
 import "./detailed-view.styles.css"
 
 const DetailedView = () => {
-    const [country, setCountry] = useState()
-    const {searchName} = useParams()
+    const [country, setCountry] = useState();
+    const {searchName} = useParams();
     useEffect(() => {
         const fetchCountry = () => {
             try {
