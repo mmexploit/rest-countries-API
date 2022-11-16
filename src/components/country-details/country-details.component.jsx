@@ -5,8 +5,8 @@ import "./country-details.styles.css"
 const CountryDetails = ( { country }) => {
     const { name : { common = "", nativeName = {}} = {}, flags : { svg = ""} = {}, population = "", region = "", subregion = "", capital = [], tld = [], currencies = {}, languages = {}} = country;
     const desiredNativeName = (nativeName[Object.keys(nativeName)[Object.keys(nativeName).length - 1]]).common
-    const desiredCurrency = (currencies[Object.keys(currencies)[0]]).name;
-    const keys = (Object.values(languages)).join(",")
+    const desiredCurrency = (currencies[Object.keys(currencies)[0]]).name
+    const keys = (Object.values(languages)).join(",");
     return (
         <>
         <div className="back"><Link to="/" className="link">Back</Link></div>
